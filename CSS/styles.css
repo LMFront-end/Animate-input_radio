@@ -1,0 +1,102 @@
+/* fonts google */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.title {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.btn {
+    width: 100px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    margin-top: 1.2em;
+    padding: 0 0.5em;
+}
+
+.btn input {
+    position: relative;
+    cursor: pointer;
+    appearance: none;
+    -webkit-appearance: none;
+}
+
+.btn input::before,
+.btn input::after {
+    content: "";
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+}
+
+.btn input:checked::before {
+    background: #ca4444;
+    transform: translate(-50%, -58%);
+    -webkit-transform: translate(-50%, -58%);
+    -moz-transform: translate(-50%, -58%);
+    -ms-transform: translate(-50%, -58%);
+    -o-transform: translate(-50%, -58%);
+}
+
+.btn input::after {
+    width: 10px;
+    height: 10px;
+    background: none;
+    border: 2px solid black;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+    transform: transform(-90%, -50%);
+    -webkit-transform: transform(-90%, -50%);
+    -moz-transform: transform(-90%, -50%);
+    -ms-transform: transform(-90%, -50%);
+    -o-transform: transform(-90%, -50%);
+    transition: all .4s;
+    -webkit-transition: all .4s;
+    -moz-transition: all .4s;
+    -ms-transition: all .4s;
+    -o-transition: all .4s;
+}
+
+.btn input:checked::after {
+    width: 100px;
+    height: 40px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    transform: translate(-15%, -50%);
+    -webkit-transform: translate(-15%, -50%);
+    -moz-transform: translate(-15%, -50%);
+    -ms-transform: translate(-15%, -50%);
+    -o-transform: translate(-15%, -50%);
+    z-index: 10;
+}
+
+.btn label {
+    margin-left: 0.5em;
+    cursor: pointer;
+}
